@@ -7,11 +7,8 @@ ac.import = function(callback){
     }
     var filename = __dirname + '/words.txt';
     fs.readFile(filename, 'utf-8', function(err, data){
-        if (err){
-            console.log(err);
-        }
         ac.words = data.split('\n');
-        return callback(ac.words);
+        return callback(err, ac.words);
     });
 }
 
@@ -23,7 +20,15 @@ ac.findWord = function(word, callback) {
         }
     }
     console.log(found);
-    callback(null, found);
+    return callback(null, found);
+}
+
+ac.stats = function(word, callback){
+    ac.searches = ac.searches || {};
+    ac.searches[word] = ac.searches[word] || [];
+    ac.searches[word].push(new Date().getTime());
+    console.log(ac.searches);
+    return callback(null, ac.searches);
 }
 
 module.exports = ac;
