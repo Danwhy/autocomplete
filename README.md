@@ -1,5 +1,5 @@
 # autocomplete
-easily find words in the Englsh dictionary
+easily find words in the English dictionary
 
 
 
