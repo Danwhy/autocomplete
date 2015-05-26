@@ -1,0 +1,26 @@
+{
+  "name": "autocomplete-danwhy",
+  "version": "1.0.0",
+  "description": "fin words in English dictionary with autosuggestion",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Danwhy/autocomplete.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "english-dictionary"
+  ],
+  "author": "danwhy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danwhy/autocomplete/issues"
+  },
+  "homepage": "https://github.com/Danwhy/autocomplete"
+}
