@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-danwhy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "fin words in English dictionary with autosuggestion",
   "main": "index.js",
   "directories": {
