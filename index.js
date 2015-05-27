@@ -19,7 +19,9 @@ ac.findWord = function(word, callback) {
             found.push(ac.words[i]);
         }
     }
-    console.log(found);
+    ac.stats(word, function(){
+        console.log(ac.searches);
+    })
     return callback(null, found);
 }
 
